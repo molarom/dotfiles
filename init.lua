@@ -454,6 +454,7 @@ vim.api.nvim_create_autocmd({ "VimEnter" }, { callback = open_nvim_tree })
 -- Addtional options
 map('n', "<C-d>", "<C-d>zz", { desc = "Jump down half page and place cursor in center of screen"})
 map('n', "<C-u>", "<C-u>zz", { desc = "Jump down half page and place cursor in center of screen"})
+vim.api.nvim_set_keymap('t', '<ESC>', [[<C-\><C-n>]], { noremap = true })
 
 vim.wo.relativenumber = true
 
